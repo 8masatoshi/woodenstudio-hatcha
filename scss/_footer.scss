@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 32px;
+    background-color: $basecolor2;
+
+    .nav {
+        margin-bottom: 24px;
+    }
+
+    .privacy-link {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    &__logo {
+        width: 166px;
+        margin-bottom: 120px;
+    }
+
+    &__copyright {
+        color: $maincolor1;
+    }
+}
