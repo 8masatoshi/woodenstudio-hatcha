@@ -4,15 +4,22 @@
 //sectionの見出し
 .section-head {
     margin-bottom: 96px;
+    @include mq(sp){
+        margin-bottom: 48px;
+    }
     &__ja{
         margin-bottom: 16px;
         font-size: 24px;
         font-weight: 600;
 
-        @include mq(sp){
+        @include mq(tab){
             margin-bottom: 8px;
             font-size: 14px;
             font-weight: 400;
+        }
+        @include mq(sp){
+            margin-bottom: 8px;
+            font-size: 14px;
         }
     }
     &--brown {
@@ -70,6 +77,9 @@
 .social-icons {
     display: flex;
     column-gap: 16px;
+    @include mq(sp){
+        column-gap: 12px;
+    }
 
     .social-link {
         display: flex;
@@ -79,10 +89,17 @@
         height: 44px;
         border-radius: 50%;
         background-color: $accentcolor;
+        @include mq(sp){
+            width: 32px;
+            height: 32px;
+        }
 
         &__icon {
             color: $textcolor2;
             font-size: 24px ;
+            @include mq(sp){
+                font-size: 16px;
+            }
         }
     }
 }

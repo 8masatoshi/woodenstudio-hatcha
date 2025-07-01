@@ -38,6 +38,13 @@ li {
    
 }
 
+.pc-none{
+    display: none;
+    @include mq(sp){
+        display: block;
+    }
+}
+
 .sp-none {
     display: block;
     @include mq(sp) {
